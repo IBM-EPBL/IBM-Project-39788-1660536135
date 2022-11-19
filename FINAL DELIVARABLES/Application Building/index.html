@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+label{
+width: 200px;
+block-size: 30px;
+display:inline-block;
+}
+body{
+background-image:url("flight.jpg");
+background-size: cover;
+background-attachment: fixed;
+}
+h1 {
+color: rgb(7, 0, 0);
+text-align: center;
+}
+</style>
+<h1 > Prediction of Flight Delay</h1><br>
+<form action="/predition" method="post">
+
+<label for="fnum">Enter the Flight Number:</label>
+<input type="number" name="fnum" id="fnum"><br>
+
+<label for="mon">Month:</label>
+<input type="number" id="dom" name="dom" ><br>
+
+<label for="dmm">Day of Month:</label>
+<input type="number" id="dmm" name="dmm"></br>
+
+<label for="dow">Day of Week:</label>
+<input type="number" id="dow" name="dow" ><br>
+
+<label for="org">Orgin</label>
+<input type="text" name="org" id="org"><br>
+
+<label for="destination">Deptination</label>
+<input type="text" name="destination" id="destination"><br>
+
+<label for="dept">Scheduled Departure Time:</label>
+<input type="number" name="dept" id="dept"><br>
+
+<label for="sdt">Scheduled Arrival Time:</label>
+<input type="number" id="sdt" name="sdt" ><br>
+
+<label for="atd">Actual Departure Time:</label>
+<input type="number" id="atd" name="atd" ><br><br>
+<input type="submit" value="Submit">
+{{ ans }}
+</form>
+</body>
+</html>
